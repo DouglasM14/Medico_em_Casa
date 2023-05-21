@@ -6,25 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="Assets/CSS/mobile.css">
     <script src="JS/script.js"></script>
     <title>Médico em Casa</title>
 </head>
 
 <body>
     <header>
-        <div class="cabecalho">
-            <img class="logo" src="Assets/Imagens/logo-branco.png" alt="Logo">
-            <nav>
-                <img class="icone-link" src="Assets/Imagens/simb-acessibilidade.png" alt="">
-                <a href="">Acessibilidade</a>
-                <img class="icone-link" src="Assets/Imagens/simb-lampada.png" alt="">
-                <a href="">Auto-Contraste</a>
-            </nav>
+        <nav>
+            <div class="navbar">
+                <img class="logo" src="Assets/Imagens/logo-branco.png" alt="Logo">
+                <ul class="navbar-itens">
+                    <img class="icone-link" src="Assets/Imagens/simb-acessibilidade.png" alt="">
+                    <li><a class="navbar-link" href="">Acessibilidade</a></li>
+                    <img class="icone-link" src="Assets/Imagens/simb-lampada.png" alt="">
+                    <li><a class="navbar-link" href="">Auto-Contraste</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-container">
+            <h1>Médico em Casa</h1>
+            <p>O Lugar do bem estar da sua família</p>
+            <a href="">Faça sua consulta Agora!</a>
         </div>
     </header>
 
     <main>
-
+        <div class="main-itens">
+            <div class="main-texto">
+                <h2>Sobre nós</h2>
+                <p>&nbsp;&nbsp;&nbsp;Em nossa empresa, valorizamos sua saúde e bem-estar acima de tudo. Nosso objetivo é fornecer cuidados
+                    médicos abrangentes e de qualidade para toda a sua família, desde crianças até idosos. Com uma
+                    equipe dedicada de profissionais experientes e altamente qualificados, estamos comprometidos em
+                    oferecer a melhor assistência médica para atender às suas necessidades individuais. </p>
+                <p>&nbsp;&nbsp;&nbsp;Estamos ansiosos para cuidar de você e de sua família. Marque sua consulta hoje mesmo e embarque em
+                    uma
+                    jornada de cuidados médicos de qualidade</p>
+            </div>
+            <div class="main-imagem">
+                <img src="Assets/Imagens/fundo2.jpg" alt="">
+            </div>
+        </div>
+        <div class="main-itens">
+            <div class="main-cadastro">
+                <h3>Primeira Consulta</h3>
+                <p>Clique no botão abaixo e preencha as informações pedidas para se cadastrar em nosso site. E poder
+                    marcar uma consulta com o seu médico sem precisar sair de casa.</p>
+                <button>CADASTRAR</button>
+            </div>
+            <hr>
+            <div class="main-login">
+                <h3>Tenho um Cadastro</h3>
+                <p>Insira seu e-mail e senha abaixo para acessar o seu perfil</p>
+                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="Senha">
+                <button>ENTRAR</button>
+            </div>
+        </div>
     </main>
 
     <footer>

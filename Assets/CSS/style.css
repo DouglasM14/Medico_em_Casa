@@ -1,51 +1,108 @@
-*{
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(28, 33, 47);
+    font-family: 'Roboto', sans-serif;
 }
 
-header{
-    position: relative;
+/*      NAV      */
+nav {
     width: 100%;
-    height: 760px;
-    background-image: url("../Imagens/fundo.png");
-    background-attachment: fixed;
-}
-.cabecalho{
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    justify-content: space-between;
-    padding: 24px;
+    height: 100px;
 }
 
-nav{
+.navbar {
     display: flex;
     align-items: center;
-    gap: 5px;
-    font-size: 1.2em;
-}
-.logo{
-    width: 75px;
-    height: 75px;
-    margin-left: 15px;
+    justify-content: space-between;
+    margin: auto;
+    width: 95%;
+    height: 100%;
 }
 
-.icone-link{
+.navbar-itens {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-itens li {
+    padding: 10px;
+}
+
+.navbar-link {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.navbar-link:hover {
+    color: rgb(43, 152, 152);
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+}
+
+.icone-link {
     width: 35px;
     height: 35px;
 }
 
+/*      HEADER      */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../Imagens/fundo.png") no-repeat center center/cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
 
+.header-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.header-container h1 {
+    font-size: 3.4rem;
+}
+
+.header-container p {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.header-container a {
+    display: inline-block;
+    color: white;
+    font-size: 1.1rem;
+    padding: 15px 60px;
+    background-color: rgb(29, 105, 105);
+    border-radius: 15px;
+    transition: background 500ms ease;
+}
+
+.header-container a:hover {
+    background-color: #134545;
+}
+
+/*      MAIN      */
 main {
     position: relative;
     margin-top: -100px;
@@ -53,9 +110,95 @@ main {
     background-color: white;
     width: 95%;
     border-radius: 50px;
-    height: 1200px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
 }
 
+.main-itens {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.main-texto {
+    width: 100%;
+}
+
+.main-texto h2 {
+    font-size: 3rem;
+}
+
+.main-texto p {
+    font-size: 1.5rem;
+    text-align: left;
+    justify-content: center;
+}
+
+.main-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.main-imagem img {
+    width: 90%;
+    border-radius: 2%;
+    margin: 10px;
+}
+
+.main-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px;
+}
+
+.main-cadastro p {
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.main-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px;
+}
+
+.main-login p {
+    font-size: 1.2rem;
+}
+
+.main-login input {
+    font-size: 1.3rem;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #666;
+}
+
+.main-itens button {
+    color: white;
+    font-size: 1.3rem;
+    margin: 5px;
+    padding: 15px 30px;
+    background-color: rgb(29, 105, 105);
+    border-radius: 15px;
+    transition: background 500ms ease;
+}
+
+.main-itens button:hover {
+    background-color: #134545;
+}
+
+/*      FOOTER      */
 footer {
     background-color: #EBEBEB;
     width: 95%;

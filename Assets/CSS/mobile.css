@@ -1,0 +1,13 @@
+.main-itens{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-texto p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.navbar-itens {
+    flex-wrap: wrap;
+}
