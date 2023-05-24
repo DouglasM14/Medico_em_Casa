@@ -32,14 +32,26 @@
     </header>
 
     <main>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
         <div class="main-itens">
             <div class="main-texto">
                 <h2>Sobre nós</h2>
-                <p>&nbsp;&nbsp;&nbsp;Em nossa empresa, valorizamos sua saúde e bem-estar acima de tudo. Nosso objetivo é fornecer cuidados
+                <p>&nbsp;&nbsp;&nbsp;Em nossa empresa, valorizamos sua saúde e bem-estar acima de tudo. Nosso objetivo é
+                    fornecer cuidados
                     médicos abrangentes e de qualidade para toda a sua família, desde crianças até idosos. Com uma
                     equipe dedicada de profissionais experientes e altamente qualificados, estamos comprometidos em
                     oferecer a melhor assistência médica para atender às suas necessidades individuais. </p>
-                <p>&nbsp;&nbsp;&nbsp;Estamos ansiosos para cuidar de você e de sua família. Marque sua consulta hoje mesmo e embarque em
+                <p>&nbsp;&nbsp;&nbsp;Estamos ansiosos para cuidar de você e de sua família. Marque sua consulta hoje
+                    mesmo e embarque em
                     uma
                     jornada de cuidados médicos de qualidade</p>
             </div>
@@ -52,7 +64,7 @@
                 <h3>Primeira Consulta</h3>
                 <p>Clique no botão abaixo e preencha as informações pedidas para se cadastrar em nosso site. E poder
                     marcar uma consulta com o seu médico sem precisar sair de casa.</p>
-                <button>CADASTRAR</button>
+                <a href="html/cadastro.html">CADASTRAR</a>
             </div>
             <hr>
             <div class="main-login">
@@ -60,13 +72,23 @@
                 <p>Insira seu e-mail e senha abaixo para acessar o seu perfil</p>
                 <input type="text" placeholder="E-mail">
                 <input type="text" placeholder="Senha">
-                <button>ENTRAR</button>
+                <a href="">ENTRAR</a>
             </div>
         </div>
     </main>
 
     <footer>
-
+        <div class="footer-itens">
+            <h5>Médico em Casa</h5>
+            <hr>
+            <a href="">Glossário de Termos Médicos</a>
+        </div>
+        <div class="footer-itens">
+            <h5>Entre em Contato</h5>
+            <hr>
+            <p>Telefone: +55 (11) 12345-1234</p>
+            <p>E-mail: medicoemcasa@gmail.com</p>
+        </div>
     </footer>
 </body>
 

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assets/CSS/cadastro.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="Assets/CSS/mobile.css"> -->
+    <!-- <script src="JS/script.js"></script> -->
+    <title>Médico em Casa</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="main-titulo">
+            <div>
+                <h1>Cadastro</h1>
+                <p>Preencha os campos para se cadastrar</p>
+            </div>
+            <img class="logo" src="../Assets/Imagens/logo-preto.png" alt="">
+        </div>
+        <hr>
+        <form name="formulario" class="main-formulario">
+
+            <div class="formulario-bloco">
+                <legend>Informações pessoais</legend>
+
+                <div class="formulario-bloco-item">
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" type="text" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input id="nascimento" type="date">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="cpf">Número do CPF</label>
+                    <input id="cpf" type="text" placeholder="___.___.___-__">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="rg">Número do RG</label>
+                    <input id="rg" type="text" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="genero">Gênero biologico</label>
+                    <select id="genero">
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="formulario-bloco">
+                <legend>Endereço</legend>
+
+                <div class="formulario-bloco-item">
+                    <label for="cep">CEP</label>
+                    <input id="cep" type="number" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="rua">Nome da Rua</label>
+                    <input id="rua" type="text" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="numero-casa">Número da residencia</label>
+                    <input id="numero-casa" type="number" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="complemento">Complemento</label>
+                    <input id="complemento" type="text" placeholder="">
+                </div>
+            </div>
+
+            <div class="formulario-bloco">
+                <legend>Dados para sua conta</legend>
+
+                <div class="formulario-bloco-item">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="telefone">Núemro de telefone</label>
+                    <input id="telefone" type="tel" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="senha">Crie uma senha</label>
+                    <input id="senha" type="text" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="senha2">Repita a senha</label>
+                    <input id="senha2" type="password" placeholder="">
+                </div>
+            </div>
+
+            <div class="formulario-bloco">
+                <legend>Historico Médico</legend>
+
+                <div class="formulario-bloco-item">
+                    <label for="doenças">Doenças crônicas</label>
+                    <input id="doenças" type="text" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="alergias">Alergias Conhecidas</label>
+                    <input id="alergias" type="text" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="condições-geneticas">Condições geneticas</label>
+                    <input id="condições-geneticas" type="text" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="condições-psiquiátricas">Condições psiquiátricas</label>
+                    <input id="condições-psiquiátricas" type="text" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="cirurgias">Cirurgias anteriores</label>
+                    <input id="cirurgias" type="text" placeholder="">
+                </div>
+
+                <div class="formulario-bloco-item">
+                    <label for="historico">Histótico Familiar</label>
+                    <input id=historico"" type="text" placeholder="">
+                </div>
+
+            </div>
+
+            <button type="submit" onclick="teste()">Cadastrar</button>
+        </form>
+
+        <a href="../index.html">Voltar</a>
+    </main>
+
+    <footer>
+        <div class="footer-itens">
+            <h5>Médico em Casa</h5>
+            <hr>
+            <a href="">Glossário de Termos Médicos</a>
+        </div>
+        <div class="footer-itens">
+            <h5>Entre em Contato</h5>
+            <hr>
+            <p>Telefone: +55 (11) 12345-1234</p>
+            <p>E-mail: medicoemcasa@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
