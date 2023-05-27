@@ -7,18 +7,6 @@
     text-decoration: none;
 }
 
-.esconder {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -39,6 +27,7 @@ main {
 }
 
 .main-titulo {
+    font-size: 1em;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -51,53 +40,42 @@ main {
     height: 65px;
 }
 
-.main-conteudo {
-    display: flex;
-    flex-direction: row;
-}
-
-.main-conteudo-imagem {
-    width: 50%;
-}
-
-.main-conteudo-imagem img {
-    width: 400px;
-}
-
-.main-conteudo-formulario {
-    width: 50%;
+.main-conteudo{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
 }
 
-legend {
-    font-size: large;
+.main-conteudo-dados{
+    display: flex;
+    flex-direction: column;
     margin: 10px;
-    font-weight: bold;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
 }
 
-.main-conteudo button {
-    font-size: 14px;
-    border-radius: 10px;
-    padding: 10px;
+.main-conteudo-historico{
+    display: flex;
+    flex-direction: column;
     margin: 10px;
-}
-
-.formulario-bloco-item label {
-    display: inline-block;
-    margin-bottom: 5px;
-}
-
-.formulario-bloco-item input {
-    border: 2px solid #f0f0f0;
-    display: block;
-    border-radius: 10px;
-    font-size: 14px;
-    width: 100%;
     padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
 }
 
+.main-conteudo a {
+    color: white;
+    font-size: 1.1em;
+    margin: 10px;
+    padding: 15px 15px;
+    background-color: rgb(29, 105, 105);
+    border-radius: 15px;
+}
+
+.main-conteudo a:hover {
+    background-color: #134545;
+}
 footer {
     display: flex;
     flex-direction: row;
@@ -106,8 +84,4 @@ footer {
     background-color: #353a46;
     width: 95%;
     border-radius: 50px 50px 0% 0%;
-}
-
-footer hr{
-    margin-bottom: 15px;
 }
