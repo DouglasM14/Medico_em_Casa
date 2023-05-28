@@ -15,6 +15,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
 /*                  HEADER                   */
 #header {
     box-sizing: border-box;
@@ -134,77 +135,4 @@ body {
         transform: rotate(-135deg);
         top: -7px;
     }
-}
-
-/*                  MAIN                  */
-
-main {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    background-color: white;
-    width: 95%;
-    border-radius: 50px;
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-titulo {
-    font-size: 1em;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.logo {
-    margin-bottom: 15px;
-    width: 65px;
-    height: 65px;
-}
-
-.main-conteudo{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.main-conteudo-dados{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 15px;
-}
-
-.main-conteudo-historico{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 15px;
-}
-
-.main-conteudo a {
-    color: white;
-    font-size: 1.1em;
-    margin: 10px;
-    padding: 15px 15px;
-    background-color: rgb(29, 105, 105);
-    border-radius: 15px;
-}
-
-.main-conteudo a:hover {
-    background-color: #134545;
-}
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px 30px;
-    background-color: #353a46;
-    width: 95%;
-    border-radius: 50px 50px 0% 0%;
 }

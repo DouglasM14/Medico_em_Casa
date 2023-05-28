@@ -6,12 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="perfil.css">
-    <script src="perfil.js"></script>
     <title>Médico em Casa</title>
 </head>
 
 <body>
-    <header></header>
+    <header id="header">
+        <img id="logo" src="/Assets/Imagens/logo-branco.png" alt="">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/Cadastro/cadastro.html">Cadastro</a></li>
+                <li><a href="/pages/Perfil/Perfil.html">Perfil</a></li>
+                <li><a href="/pages/Painel_Usuario/painelUsuario.html">painelUsuario</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <div class="main-titulo">
@@ -73,6 +86,7 @@
             <p>E-mail: medicoemcasa@gmail.com</p>
         </div>
     </footer>
+    <script src="perfil.js"></script>
 </body>
 
 </html>

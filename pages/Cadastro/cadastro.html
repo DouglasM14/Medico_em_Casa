@@ -6,14 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
-    <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="Assets/CSS/mobile.css"> -->
-    <script src="cadastro.js"></script>
     <title>Médico em Casa</title>
 </head>
 
 <body>
-    <header>
-
+    <header id="header">
+        <img id="logo" src="/Assets/Imagens/logo-branco.png" alt="">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/Cadastro/cadastro.html">Cadastro</a></li>
+                <li><a href="/pages/Perfil/Perfil.html">Perfil</a></li>
+                <li><a href="/pages/Painel_Usuario/painelUsuario.html">painelUsuario</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -28,159 +38,162 @@
 
         <div class="main-conteudo">
             <div class="main-conteudo-imagem">
-                <img src="/Assets/Imagens/imagemDeTeste.png" alt="">
+                <img src="/Assets/Imagens/Medico Desenho.jpg" alt="">
             </div>
             <div class="main-conteudo-formulario">
-                <div class="formulario-bloco" id="bloco1">
-                    <legend>Informações pessoais</legend>
+                <div id="quadrado">
+                    <div class="formulario-bloco" id="bloco1">
+                        <legend>Informações pessoais</legend>
 
-                    <div class="formulario-bloco-item">
-                        <label for="nome">Nome completo</label>
-                        <input id="nome" type="text" placeholder="">
+                        <div class="formulario-bloco-item">
+                            <label for="nome" class="titulos">Nome completo</label>
+                            <input id="nome" type="text" placeholder="">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <label for="nascimento" class="titulos">Data de Nascimento</label>
+                            <input id="nascimento" type="date">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <label for="cpf" class="titulos">Número do CPF</label>
+                            <input id="cpf" type="text" placeholder="___.___.___-__">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <label for="rg" class="titulos">Número do RG</label>
+                            <input id="rg" type="text" placeholder="">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <label for="genero" class="titulos">Gênero biologico</label>
+                            <select id="genero">
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                            </select>
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <button onclick="continuar1()">Continuar</button>
+                        </div>
                     </div>
 
-                    <div class="formulario-bloco-item">
-                        <label for="nascimento">Data de Nascimento</label>
-                        <input id="nascimento" type="date">
+                    <div class="formulario-bloco esconder" id="bloco2">
+                        <legend>Endereço</legend>
+
+                        <div class="formulario-bloco-item">
+                            <label for="cep" class="titulos">CEP</label>
+                            <input id="cep" type="number" placeholder="">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <label for="rua" class="titulos">Nome da Rua</label>
+                            <input id="rua" type="text" placeholder="">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <label for="numero-casa" class="titulos">Número da residencia</label>
+                            <input id="numero-casa" type="number" placeholder="">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <label for="complemento" class="titulos">Complemento</label>
+                            <input id="complemento" type="text" placeholder="">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <button onclick="voltar2()">Voltar</button>
+                            <button onclick="continuar2()">Continuar</button>
+                        </div>
                     </div>
 
-                    <div class="formulario-bloco-item">
-                        <label for="cpf">Número do CPF</label>
-                        <input id="cpf" type="text" placeholder="___.___.___-__">
+                    <div class="formulario-bloco esconder" id="bloco3">
+                        <legend>Dados para sua conta</legend>
+
+                        <div class="formulario-bloco-item">
+                            <label for="email" class="titulos">E-mail</label>
+                            <input id="email" type="email" placeholder="">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <label for="telefone" class="titulos">Núemro de telefone</label>
+                            <input id="telefone" type="tel" placeholder="">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <label for="senha" class="titulos">Crie uma senha</label>
+                            <input id="senha" type="text" placeholder="">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <label for="senha2" class="titulos">Repita a senha</label>
+                            <input id="senha2" type="password" placeholder="">
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <button onclick="voltar3()">Voltar</button>
+                            <button onclick="continuar3()">Continuar</button>
+                        </div>
                     </div>
 
-                    <div class="formulario-bloco-item">
-                        <label for="rg">Número do RG</label>
-                        <input id="rg" type="text" placeholder="">
-                    </div>
+                    <div class="formulario-bloco esconder" id="bloco4">
+                        <legend>Historico Médico</legend>
 
-                    <div class="formulario-bloco-item">
-                        <label for="genero">Gênero biologico</label>
-                        <select id="genero">
-                            <option>Masculino</option>
-                            <option>Feminino</option>
-                        </select>
-                    </div>
+                        <div class="formulario-bloco-item">
+                            <label for="doenças" class="titulos">Doenças crônicas</label>
+                            <input id="doenças" type="text" placeholder="">
+                        </div>
 
-                    <div class="formulario-bloco-item">
-                        <button onclick="continuar1()">Continuar</button>
-                    </div>
-                </div>
+                        <div class="formulario-bloco-item">
+                            <label for="alergias" class="titulos">Alergias Conhecidas</label>
+                            <input id="alergias" type="text" placeholder="">
+                        </div>
 
-                <div class="formulario-bloco esconder" id="bloco2">
-                    <legend>Endereço</legend>
+                        <div class="formulario-bloco-item">
+                            <label for="condições-geneticas" class="titulos">Condições geneticas</label>
+                            <input id="condições-geneticas" type="text" placeholder="">
+                        </div>
 
-                    <div class="formulario-bloco-item">
-                        <label for="cep">CEP</label>
-                        <input id="cep" type="number" placeholder="">
-                    </div>
+                        <div class="formulario-bloco-item">
+                            <label for="condições-psiquiátricas" class="titulos">Condições psiquiátricas</label>
+                            <input id="condições-psiquiátricas" type="text" placeholder="">
+                        </div>
 
-                    <div class="formulario-bloco-item">
-                        <label for="rua">Nome da Rua</label>
-                        <input id="rua" type="text" placeholder="">
-                    </div>
+                        <div class="formulario-bloco-item">
+                            <label for="cirurgias" class="titulos">Cirurgias anteriores</label>
+                            <input id="cirurgias" type="text" placeholder="">
+                        </div>
 
-                    <div class="formulario-bloco-item">
-                        <label for="numero-casa">Número da residencia</label>
-                        <input id="numero-casa" type="number" placeholder="">
-                    </div>
+                        <div class="formulario-bloco-item">
+                            <label for="historico" class="titulos">Histótico Familiar</label>
+                            <input id=historico"" type="text" placeholder="">
+                        </div>
 
-                    <div class="formulario-bloco-item">
-                        <label for="complemento">Complemento</label>
-                        <input id="complemento" type="text" placeholder="">
-                    </div>
-
-                    <div class="formulario-bloco-item">
-                        <button onclick="voltar2()">Voltar</button>
-                        <button onclick="continuar2()">Continuar</button>
-                    </div>
-                </div>
-
-                <div class="formulario-bloco esconder" id="bloco3">
-                    <legend>Dados para sua conta</legend>
-
-                    <div class="formulario-bloco-item">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" placeholder="">
-                    </div>
-
-                    <div class="formulario-bloco-item">
-                        <label for="telefone">Núemro de telefone</label>
-                        <input id="telefone" type="tel" placeholder="">
-                    </div>
-
-                    <div class="formulario-bloco-item">
-                        <label for="senha">Crie uma senha</label>
-                        <input id="senha" type="text" placeholder="">
-                    </div>
-
-                    <div class="formulario-bloco-item">
-                        <label for="senha2">Repita a senha</label>
-                        <input id="senha2" type="password" placeholder="">
-                    </div>
-
-                    <div class="formulario-bloco-item">
-                        <button onclick="voltar3()">Voltar</button>
-                        <button onclick="continuar3()">Continuar</button>
-                    </div>
-                </div>
-
-                <div class="formulario-bloco esconder" id="bloco4">
-                    <legend>Historico Médico</legend>
-
-                    <div class="formulario-bloco-item">
-                        <label for="doenças">Doenças crônicas</label>
-                        <input id="doenças" type="text" placeholder="">
-                    </div>
-
-                    <div class="formulario-bloco-item">
-                        <label for="alergias">Alergias Conhecidas</label>
-                        <input id="alergias" type="text" placeholder="">
-                    </div>
-
-                    <div class="formulario-bloco-item">
-                        <label for="condições-geneticas">Condições geneticas</label>
-                        <input id="condições-geneticas" type="text" placeholder="">
-                    </div>
-
-                    <div class="formulario-bloco-item">
-                        <label for="condições-psiquiátricas">Condições psiquiátricas</label>
-                        <input id="condições-psiquiátricas" type="text" placeholder="">
-                    </div>
-
-                    <div class="formulario-bloco-item">
-                        <label for="cirurgias">Cirurgias anteriores</label>
-                        <input id="cirurgias" type="text" placeholder="">
-                    </div>
-
-                    <div class="formulario-bloco-item">
-                        <label for="historico">Histótico Familiar</label>
-                        <input id=historico"" type="text" placeholder="">
-                    </div>
-
-                    <div class="formulario-bloco-item">
-                        <button onclick="voltar4()">Voltar</button>
-                        <button onclick="finalizar()">Finalizar</button>
+                        <div class="formulario-bloco-item">
+                            <button onclick="voltar4()">Voltar</button>
+                            <button onclick="finalizar()">Finalizar</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="../index.html">Voltar</a>
+        <a href="/index.html">Voltar</a>
     </main>
 
     <footer>
-        <div class="footer-itens">
+        <div class="footer-itens-1">
             <h5>Médico em Casa</h5>
             <hr>
             <a href="">Glossário de Termos Médicos</a>
         </div>
-        <div class="footer-itens">
+        <div class="footer-itens-2">
             <h5>Entre em Contato</h5>
             <hr>
             <p>Telefone: +55 (11) 12345-1234</p>
             <p>E-mail: medicoemcasa@gmail.com</p>
         </div>
     </footer>
+    <script src="cadastro.js"></script>
 </body>
 
 </html>
