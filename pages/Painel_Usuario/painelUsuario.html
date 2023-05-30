@@ -2,29 +2,70 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="painelUsuario.css">
-  <title>Médico em Casa</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="painelUsuario.css">
+    <title>Médico em Casa</title>
 </head>
 
 <body>
-  <header id="header">
-    <img id="logo" src="../../Assets/Imagens/logo-branco.png" alt="">
-    <nav id="nav">
-      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
-        <span id="hamburger"></span>
-      </button>
-      <ul id="menu" role="menu">
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="../Cadastro/cadastro.html">Cadastro</a></li>
-        <li><a href="../Perfil/Perfil.html">Perfil</a></li>
-        <li><a href="../Painel_Usuario/painelUsuario.html">painelUsuario</a></li>
-      </ul>
-    </nav>
-  </header>
-  <script src="painelUsuario.js"></script>
+    <header id="header">
+        <img id="logo" src="../../Assets/Imagens/logo-branco.png" alt="">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../Cadastro/cadastro.html">Cadastro</a></li>
+                <li><a href="../Perfil/Perfil.html">Perfil</a></li>
+                <li><a href="../Painel_Usuario/painelUsuario.html">painelUsuario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2> O que você deseja fazer?</h2>
+        <hr>
+
+        <div class="opções">
+
+            <div class="opção">
+                <img src="../../Assets/Imagens/contract.png" alt="">
+                <a href="">Marcar uma consulta</a>
+            </div>
+
+            <div class="opção">
+                <img src="../../Assets/Imagens/book.png" alt="">
+                <a href="">Ver minhas consultas</a>
+            </div>
+
+            <div class="opção">
+                <img src="../../Assets/Imagens/user-profile.png" alt="">
+                <a href="../Perfil/Perfil.html">Ver o meu Perfil</a>
+            </div>
+        </div>
+        <div>
+            <a class="voltar" href="../../index.html">Voltar</a>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h5>Médico em Casa</h5>
+            <hr>
+            <a href="">Glossário de Termos Médicos</a>
+        </div>
+        <div>
+            <h5>Entre em Contato</h5>
+            <hr>
+            <p>Telefone: +55 (11) 12345-1234</p>
+            <p>E-mail: medicoemcasa@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="painelUsuario.js"></script>
 </body>
 
 </html>

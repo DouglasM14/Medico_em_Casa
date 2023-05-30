@@ -15,7 +15,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
 /*                  HEADER                   */
 #header {
     box-sizing: border-box;
@@ -61,6 +60,102 @@ body {
     display: none;
 }
 
+/*                  MAIN                   */
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 95%;
+    border-radius: 20px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+main hr{
+    border: 1px solid black;
+}
+
+.opções{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opção{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 15px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.opção img{
+    width: 75%;
+}
+
+.opção a, main a{
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-size: 1.1rem;
+    width: 75%;
+    padding: 15px 15px;
+    background-color: rgb(29, 105, 105);
+    border-radius: 15px;
+}
+
+.opção a:hover, main a:hover {
+    background-color: #134545;
+}
+
+.voltar{
+    width: 200px;
+}
+
+/*                  FOOTER                   */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 5px;
+    background-color: #353a46;
+    width: 95%;
+    border-radius: 20px 20px 0px 0px;
+}
+footer h5 {
+    font-size: 1.2em;
+    color: white;
+    font-weight: lighter;
+}
+
+footer a {
+    font-size: 0.9em;
+    font-weight: lighter;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: white;
+    margin: 10px;
+    font-weight: lighter;
+}
+
+
+/*                  MEDIA QUERY                   */
 @media (max-width: 600px) {
     #header {
         border-radius: 0;
