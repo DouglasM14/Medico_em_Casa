@@ -60,82 +60,6 @@ body {
     display: none;
 }
 
-@media (max-width: 600px) {
-    #header {
-        border-radius: 0;
-        background: rgba(53, 58, 70, 0.5);
-    }
-
-    #menu {
-        display: block;
-        position: absolute;
-        width: 95%;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        top: 70px;
-        right: 0px;
-        background: rgba(53, 58, 70, 0.5);
-        transition: 0.6s;
-        z-index: 1000;
-        height: 0px;
-        visibility: hidden;
-        overflow-y: hidden;
-
-    }
-
-    #nav.active #menu {
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
-    }
-
-    #menu a {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    }
-
-    #btn-mobile {
-        display: flex;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        gap: 0.5rem;
-        color: white;
-    }
-
-    #hamburger {
-        border-top: 2px solid white;
-        width: 20px;
-    }
-
-    #hamburger::after,
-    #hamburger::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: white;
-        margin-top: 5px;
-        transition: 0.3s;
-        position: relative;
-    }
-
-    #nav.active #hamburger {
-        border-top-color: transparent;
-    }
-
-    #nav.active #hamburger::before {
-        transform: rotate(135deg);
-    }
-
-    #nav.active #hamburger::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-}
 
 /*                   HEADER-titulo                 */
 header {
@@ -288,4 +212,97 @@ footer {
     background-color: #353a46;
     width: 95%;
     border-radius: 50px 50px 0% 0%;
+}
+
+@media (max-width: 760px) {
+    .main-itens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-texto p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .navbar-itens {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    #header {
+        border-radius: 0;
+        background: rgba(53, 58, 70, 0.5);
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        top: 70px;
+        right: 0px;
+        background: rgba(53, 58, 70, 0.5);
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        color: white;
+    }
+
+    #hamburger {
+        border-top: 2px solid white;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: white;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 }
