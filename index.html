@@ -19,10 +19,10 @@
                     <span id="hamburger"></span>
                 </button>
                 <ul id="menu" role="menu">
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../Pag_Cadastro/cadastro.html">Cadastro</a></li>
-                    <li><a href="../Pag_Perfil/Perfil.html">Perfil</a></li>
-                    <li><a href="../Pag_Painel do Usuario/painelUsuario.html">painelUsuario</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/Pag_Cadastro/cadastro.html">Cadastro</a></li>
+                    <li><a href="pages/Pag_Perfil/Perfil.html">Perfil</a></li>
+                    <li><a href="pages/Pag_Painel do Usuario/painelUsuario.html">painelUsuario</a></li>
                 </ul>
             </nav>
         </div>
@@ -70,10 +70,18 @@
             </div>
             <hr>
             <div class="main-login">
-                <h3>Tenho um Cadastro</h3>
-                <p>Insira seu e-mail e senha abaixo para acessar o seu perfil</p>
-                <input type="text" placeholder="E-mail">
-                <input type="text" placeholder="Senha">
+                <div>
+                    <h3>Tenho um Cadastro</h3>
+                    <p>Insira seu e-mail e senha abaixo para acessar o seu perfil</p>
+                </div>
+                <div class="main-login-inputs">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="main-login-inputs">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha">
+                </div>
                 <a href="">ENTRAR</a>
             </div>
         </div>
