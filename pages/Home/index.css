@@ -48,7 +48,7 @@ body {
 }
 
 #menu a:hover {
-    color: blue;
+    color: rgb(105, 105, 105);
 }
 
 #logo {
@@ -83,6 +83,7 @@ header {
     align-items: center;
     justify-content: center;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header-container h1 {
@@ -99,12 +100,12 @@ header {
     color: white;
     font-size: 1.1rem;
     padding: 15px 60px;
-    background-color: rgb(29, 105, 105);
+    background-color: rgb(38, 97, 196);
     border-radius: 15px;
 }
 
 .header-container a:hover {
-    background-color: #134545;
+    background-color: rgb(16, 58, 131);
 }
 
 /*      MAIN      */
@@ -124,20 +125,24 @@ main {
     display: flex;
     flex-direction: row;
     margin: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-texto {
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-texto h2 {
     font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-texto p {
     font-size: 1.5rem;
     text-align: left;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-imagem {
@@ -161,6 +166,7 @@ main {
     font-size: 2rem;
     text-align: center;
     margin: 5px;
+    gap: 5%;
 }
 
 .main-cadastro p {
@@ -183,7 +189,7 @@ main {
     font-size: 1.2rem;
 }
 
-.main-login-inputs{
+.main-login-inputs {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -209,13 +215,13 @@ main {
     font-size: 1.3rem;
     margin: 5px;
     padding: 15px 30px;
-    background-color: rgb(29, 105, 105);
+    background-color: rgb(38, 97, 196);
     border-radius: 15px;
     transition: background 500ms ease;
 }
 
 .main-itens a:hover {
-    background-color: #134545;
+    background-color: rgb(16, 58, 131);
 }
 
 /*      FOOTER      */
@@ -228,6 +234,7 @@ footer {
     width: 95%;
     border-radius: 20px 20px 0px 0px;
 }
+
 footer h5 {
     font-size: 1.2em;
     color: white;

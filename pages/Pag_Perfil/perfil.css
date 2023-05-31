@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 * {
@@ -48,7 +50,7 @@ body {
 }
 
 #menu a:hover {
-    color: blue;
+    color: rgb(105, 105, 105);
 }
 
 #logo {
@@ -150,17 +152,11 @@ main {
 }
 
 .main-titulo {
-    font-size: 1em;
+    font-size: 1.1em;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.logo {
-    margin-bottom: 15px;
-    width: 65px;
-    height: 65px;
 }
 
 .main-conteudo{
@@ -172,41 +168,72 @@ main {
 .main-conteudo-dados{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px 0px 0px 0px;
     padding: 10px;
     border: 2px solid black;
     border-radius: 15px;
+    font-size: 1.1em;
+    font-family: "Roboto", sans-serif;
 }
 
 .main-conteudo-historico{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px 0px 20px 0px;
     padding: 10px;
     border: 2px solid black;
     border-radius: 15px;
+    font-size: 1.1em;
 }
 
 .main-conteudo a {
     color: white;
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin: 10px;
     padding: 15px 15px;
-    background-color: rgb(29, 105, 105);
+    background-color: rgb(38, 97, 196);
     border-radius: 15px;
+    width: 150px;
+    text-align: center;
 }
 
 .main-conteudo a:hover {
-    background-color: #134545;
+    background-color: rgb(16, 58, 131);
 }
-
-
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 40px 30px;
+    justify-content: space-around;
+    padding: 15px 5px;
     background-color: #353a46;
     width: 95%;
-    border-radius: 50px 50px 0% 0%;
+    border-radius: 20px 20px 0px 0px;
 }
+footer h5 {
+    font-size: 1.2em;
+    color: white;
+    font-weight: lighter;
+}
+
+footer a {
+    font-size: 0.9em;
+    font-weight: lighter;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: white;
+    margin: 10px;
+    font-weight: lighter;
+}
+
+
+.bt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
