@@ -7,24 +7,11 @@
     text-decoration: none;
 }
 
-.esconder {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
-
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(28, 33, 47);
-    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -75,125 +62,76 @@ body {
 
 
 
-/*                  MAIN                 */
+/*      MAIN      */
 main {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     width: 95%;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 40px 30px;
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
-
-
-.main-conteudo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: rgb(217, 243, 255);
-    background: radial-gradient(circle, rgba(217, 243, 255, 1) 0%, rgba(208, 240, 255, 1) 100%);
-    border-radius: 30px 30px 30px 30px;
-}
-
-.main-conteudo-imagem {
-    width: 50%;
-}
-
-.main-conteudo-imagem img {
-    width: 100%;
-    border-radius: 30px 0px 0px 30px;
-}
-
-.main-conteudo-formulario {
-    width: 50%
-}
-
-.formulario-bloco {
-    width: 100%;
-    height: 100%;
+.main-consulta{
+    /* border: 2px solid black;
+    border-radius: 15px; */
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
-.formulario-bloco-item {
-    width: 75%;
+.sintomas{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.formulario-bloco-button {
+.sintomas label,
+.escolha-dataHora label{
+    font-size: 1.2em;
+}
+
+.sintomas textarea{
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+}
+
+.escolha-dataHora{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 15px;
-    width: 100%;
 }
 
-.main-conteudo a {
+.escolha-dataHora input{
+    font-size: 1.2;
+}
+
+.area-botão{
+    display: flex;
+    justify-content: right;
+}
+main a {
     color: white;
-    font-size: 1.2rem;
-    padding: 15px 12px;
+    font-size: 1.3em;
+    margin: 10px;
+    padding: 15px 15px;
     background-color: rgb(38, 97, 196);
     border-radius: 15px;
-    width: 200px;
-    margin: 10px;
+    width: 150px;
+    text-align: center;
 }
 
-.main-conteudo a:hover {
-    background-color: rgb(27, 66, 132);
+main a:hover {
+    background-color: rgb(16, 58, 131);
 }
 
-.main-conteudo button {
-    color: white;
-    font-size: 1.2rem;
-    padding: 15px 12px;
-    background-color: rgb(38, 97, 196);
-    border: none;
-    border-radius: 15px;
-    width: 200px;
-    margin: 10px;
-}
-
-.main-conteudo button:hover {
-    background-color: rgb(27, 66, 132);
-}
-
-.formulario-bloco legend {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-
-.formulario-bloco-item label {
-    display: inline-block;
-    margin-bottom: 3px;
-    font-size: 1.1em;
-    margin-left: 10px;
-}
-
-.formulario-bloco-item input {
-    border: 2px solid #e0e0e0;
-    display: block;
-    border-radius: 10px;
-    font-size: 1em;
-    width: 100%;
-    padding: 10px;
-}
-
-.formulario-bloco-item select {
-    border: 2px solid #e0e0e0;
-    display: block;
-    border-radius: 10px;
-    font-size: 1em;
-    width: 100%;
-    padding: 10px;
-}
-
+/*      FOOTER      */
 footer {
     display: flex;
     flex-direction: row;
@@ -225,24 +163,9 @@ footer p {
     font-weight: lighter;
 }
 
-/* MEDIA QUERY */
-@media (max-width: 1000px) {
-    .main-conteudo-formulario {
-        width: 100%;
-    }
 
-    .main-conteudo-imagem {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-    }
-}
+
+
 
 @media (max-width: 600px) {
     #header {
@@ -317,13 +240,5 @@ footer p {
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
-    }
-}
-
-@media (max-width: 550px) {
-    footer {
-        flex-direction: column;
-        padding: 15px;
-        gap: 15px;
     }
 }

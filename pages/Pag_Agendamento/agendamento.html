@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agendamento.css">
+    <title>Médico em Casa</title>
+</head>
+
+<body>
+    <header id="header">
+        <img id="logo" src="../../Assets/Imagens/logo-branco.png" alt="">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../Pag_Cadastro/cadastro.html">Cadastro</a></li>
+                <li><a href="../Pag_Perfil/Perfil.html">Perfil</a></li>
+                <li><a href="../Pag_Painel do Usuario/painelUsuario.html">Painel do Usuário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-titulo">
+            <h1>Agendamento</h1>
+            <hr>
+        </div>
+
+        <div class="main-consulta">
+            
+            <div class="escolha-dataHora">
+                <label for="dataHora">Escolha a data e o Horario:</label>
+                <input type="datetime-local" id="dataHora">
+            </div>
+
+            <div class="sintomas">
+                <label for="sintomas">Descreva seus sintomas:</label>
+                <textarea id="sintomas" cols="30" rows="10"></textarea>
+            </div>
+            
+        </div>
+
+        <div class="area-botão">
+            <a href="../Pag_Pagamento/pagamento.html">Continuar</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-itens">
+            <h5>Médico em Casa</h5>
+            <hr>
+            <a href="">Glossário de Termos Médicos</a>
+        </div>
+        <div class="footer-itens">
+            <h5>Entre em Contato</h5>
+            <hr>
+            <p>Telefone: +55 (11) 12345-1234</p>
+            <p>E-mail: medicoemcasa@gmail.com</p>
+        </div>
+    </footer>
+    <script src="agendamento.js"></script>
+</body>
+
+</html>
