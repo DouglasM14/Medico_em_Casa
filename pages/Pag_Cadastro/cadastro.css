@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(28, 33, 47);
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -60,7 +61,7 @@ body {
 }
 
 #menu a:hover {
-    color: blue;
+    color: rgb(105, 105, 105);
 }
 
 #logo {
@@ -72,11 +73,13 @@ body {
     display: none;
 }
 
+
+
 /*                  MAIN                 */
 main {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 95%;
     border-radius: 20px;
     padding: 40px 30px;
@@ -84,11 +87,16 @@ main {
     flex-direction: column;
 }
 
+
+
 .main-conteudo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background: rgb(217, 243, 255);
+    background: radial-gradient(circle, rgba(217, 243, 255, 1) 0%, rgba(208, 240, 255, 1) 100%);
+    border-radius: 30px 30px 30px 30px;
 }
 
 .main-conteudo-imagem {
@@ -106,6 +114,7 @@ main {
 
 .formulario-bloco {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,9 +131,37 @@ main {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    width: 75%;
+    width: 100%;
 }
 
+.main-conteudo a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 12px;
+    background-color: rgb(38, 97, 196);
+    border-radius: 15px;
+    width: 200px;
+    margin: 10px;
+}
+
+.main-conteudo a:hover {
+    background-color: rgb(27, 66, 132);
+}
+
+.main-conteudo button {
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 12px;
+    background-color: rgb(38, 97, 196);
+    border: none;
+    border-radius: 15px;
+    width: 200px;
+    margin: 10px;
+}
+
+.main-conteudo button:hover {
+    background-color: rgb(27, 66, 132);
+}
 .formulario-bloco legend {
     font-size: 1.5rem;
     font-weight: bold;
@@ -156,21 +193,6 @@ main {
     padding: 10px;
 }
 
-.main-conteudo button {
-    color: white;
-    font-size: 1.2rem;
-    padding: 15px 12px;
-    background-color: rgb(38, 97, 196);
-    border-radius: 15px;
-    border: none;
-    width: 200px;
-    margin: 10px;
-}
-
-.main-conteudo button:hover {
-    background-color: rgb(27, 66, 132);
-}
-
 footer {
     display: flex;
     flex-direction: row;
@@ -180,6 +202,7 @@ footer {
     width: 95%;
     border-radius: 20px 20px 0px 0px;
 }
+
 footer h5 {
     font-size: 1.2em;
     color: white;
@@ -297,7 +320,7 @@ footer p {
 }
 
 @media (max-width: 550px) {
-    footer{
+    footer {
         flex-direction: column;
         padding: 15px;
         gap: 15px;
