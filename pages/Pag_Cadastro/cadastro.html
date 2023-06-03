@@ -25,7 +25,8 @@
 
 
     <header id="header">
-        <a href="../../index.html"><img id="logo" src="Assets/Imagens/logoBranca.svg" alt="Mãos representando o cuidado com a saúde, por meio do sinal de adição"></a>
+        <a href="../../index.html"><img id="logo" src="../../Assets/Imagens/logoBranca.svg"
+                alt="Mãos representando o cuidado com a saúde, por meio do sinal de adição"></a>
         <nav id="nav">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
                 aria-expanded="false">Menu
@@ -58,23 +59,26 @@
 
                         <div class="formulario-bloco-item">
                             <label for="nome" class="titulos">Nome completo</label>
-                            <input id="nome" type="text" placeholder="">
-                            <div class="error"></div>
+                            <input class="required" id="nome" type="text" placeholder="" oninput="nameValidate()">
+                            <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="nascimento" class="titulos">Data de Nascimento</label>
-                            <input id="nascimento" type="date">
+                            <input class="required" id="nascimento" type="date" oninput="dateValidate()">
+                            <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="cpf" class="titulos">Número do CPF</label>
-                            <input id="cpf" type="text" placeholder="___.___.___-__">
+                            <input class="required" id="cpf" type="text" maxlength="11" placeholder="000.000.000-00" oninput="cpfValidate()">
+                            <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="rg" class="titulos">Número do RG</label>
-                            <input id="rg" type="text" placeholder="">
+                            <input class="required" id="rg" type="text" maxlength="9" placeholder="00.000.000-0" oninput="rgValidate()">
+                            <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
@@ -91,22 +95,25 @@
                     </section>
 
                     <section class="formulario-bloco esconder" id="bloco2">
-                        
+
                         <legend>Endereço</legend>
 
                         <div class="formulario-bloco-item">
-                            <label for="cep" class="titulos">CEP</label>
-                            <input id="cep" type="number" placeholder="">
-                        </div>
-
-                        <div class="formulario-bloco-item">
                             <label for="rua" class="titulos">Nome da Rua</label>
-                            <input id="rua" type="text" placeholder="">
+                            <input class="required" id="rua" type="text" placeholder="" oninput="ruaValidate()">
+                            <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="numeroCasa" class="titulos">Número da residencia</label>
-                            <input id="numeroCasa" type="number" placeholder="">
+                            <input class="required" id="numeroCasa" type="number" placeholder="" oninput="numRuaValidate()">
+                            <span class="span-required">Esse campo é obrigatorio</span>
+                        </div>
+
+                        <div class="formulario-bloco-item">
+                            <label for="cep" class="titulos">CEP</label>
+                            <input class="required" id="cep" type="number" placeholder="Digite o CEP" oninput="cepValidate()">
+                            <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
@@ -125,22 +132,26 @@
 
                         <div class="formulario-bloco-item">
                             <label for="email" class="titulos">E-mail</label>
-                            <input id="email" type="email" placeholder="">
+                            <input class="required" id="email" type="email" placeholder="exemplo@gmail.com" oninput="emailValidate()">
+                            <span class="span-required">Digite um email valido</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="telefone" class="titulos">Núemro de telefone</label>
-                            <input id="telefone" type="tel" placeholder="">
+                            <input class="required" id="telefone" type="tel" placeholder="(00) 00000-0000" oninput="telValidate()">
+                            <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="senha" class="titulos">Crie uma senha</label>
-                            <input id="senha" type="text" placeholder="">
+                            <input class="required" id="senha" type="text" placeholder="Digite uma senha com no minimo 8 digitos" oninput="senhaValidate()">
+                            <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="senha2" class="titulos">Repita a senha</label>
-                            <input id="senha2" type="password" placeholder="">
+                            <input class="required" id="senha2" type="password" placeholder="Repita a senha" oninput="compararSenha()">
+                            <span class="span-required">As senhas devem ser compativeis</span>
                         </div>
 
                         <div class="formulario-bloco-button">
@@ -153,7 +164,8 @@
                         <legend>Historico Médico</legend>
 
                         <div class="formulario-bloco-item">
-                            <label for="doenças" type="text" placeholder="">
+                            <label for="doenças"></label>
+                            <input type="text" placeholder="">
                         </div>
 
                         <div class="formulario-bloco-item">
@@ -186,11 +198,9 @@
                             <a onclick="voltar4()">Voltar</a>
                             <button onclick="finalizar()">Finalizar</button>
                         </div>
-                    </div>
-                    
+                    </section>
                 </form>
             </div>
-
         </div>
     </main>
 
