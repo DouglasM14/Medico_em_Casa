@@ -103,7 +103,7 @@ function continuar1() {
         removeError(3)
         numValidar++
     }
-    if (numValidar == 4) {
+    if (numValidar == 0) {
         document.getElementById("bloco1").classList.add('esconder')
         document.getElementById("bloco2").classList.remove('esconder')
     }
@@ -165,7 +165,7 @@ function continuar2() {
         numValidar++
     }
 
-    if (numValidar == 3) {
+    if (numValidar == 0) {
         document.getElementById("bloco2").classList.add('esconder')
         document.getElementById("bloco3").classList.remove('esconder')
     }
@@ -243,7 +243,7 @@ function continuar3() {
     } else {
         setError(10)
     }
-    if (numValidar == 4) {
+    if (numValidar == 0) {
         document.getElementById("bloco3").classList.add('esconder')
         document.getElementById("bloco4").classList.remove('esconder')
     }
@@ -258,6 +258,6 @@ function voltar4() {
     document.getElementById("bloco3").classList.remove('esconder')
 }
 
-function Finalizar() {
-    console.log("formulario enviado")
+function finalizar() {
+    document.getElementById('popup').classList.remove('esconder')
 }
