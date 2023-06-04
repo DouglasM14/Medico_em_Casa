@@ -20,10 +20,8 @@
                 </button>
                 <ul id="menu" role="menu">
                     <li><a href="" >Acessibilidade</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/Pag_Cadastro/cadastro.html">Cadastro</a></li>
-                    <li><a href="pages/Pag_Perfil/Perfil.html">Perfil</a></li>
                     <li><a href="pages/Pag_Painel do Usuario/painelUsuario.html">Painel do Usuário</a></li>
+                    <li><a href="pages/Pag_Medico_Painel/painelMedico.html">Painel do Medico</a></li>
                 </ul>
             </nav>
         </div>
@@ -66,7 +64,7 @@
                 <h3>Primeira Consulta</h3>
                 <p>Clique no botão abaixo e preencha as informações pedidas para se cadastrar em nosso site. E poder
                     marcar uma consulta com o seu médico sem precisar sair de casa.</p>
-                <a href="pages/Pag_Cadastro/cadastro.html">CADASTRAR</a>
+                <a class="entrar" href="pages/Pag_Cadastro/cadastro.html">CADASTRAR</a>
             </div>
             <hr>
             <div class="main-login">
@@ -76,13 +74,16 @@
                 </div>
                 <div class="main-login-inputs">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email">
+                    <input class="required" type="email" id="email" oninput="emailValidate()">
+                    <span class="span-required">Esse campo deve ser preenchido</span>
                 </div>
                 <div class="main-login-inputs">
                     <label for="senha">Senha</label>
-                    <input type="password" id="senha">
+                    <input class="required" type="password" id="senha">
+                    <span class="span-required">Esse campo deve ser preenchido</span>
+                    <div class="esqueciSenha"><a href="">Esqueci a senha</a></div>
                 </div>
-                <a href="">ENTRAR</a>
+                <a class="entrar" onclick="verificarLogin()">ENTRAR</a>
             </div>
         </div>
     </main>
