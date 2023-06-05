@@ -7,6 +7,15 @@
     text-decoration: none;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(28, 33, 47);
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
 .esconder {
     border: 0;
     clip: rect(0 0 0 0);
@@ -26,14 +35,6 @@
     display: none;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(28, 33, 47);
-    overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
-}
 
 /*                  HEADER                   */
 #header {
@@ -187,6 +188,8 @@ main {
     padding: 10px;
 }
 
+/*                     FOOTER                   */
+
 footer {
     display: flex;
     flex-direction: row;
@@ -219,7 +222,7 @@ footer p {
 }
 
 
-
+/*                       Pop-Up                    */
 .popup-container {
     width: 100%;
     height: 100%;
@@ -293,7 +296,7 @@ footer p {
 }
 
 
-/* MEDIA QUERY */
+/*                  MEDIA QUERY                     */
 @media (max-width: 1000px) {
     .main-conteudo-formulario {
         width: 100%;

@@ -11,7 +11,8 @@
 
 <body>
     <header id="header">
-        <a href="../../index.html"><img id="logo" src="../../Assets/Imagens/logoBranca.svg" alt="Mãos representando o cuidado com a saúde, por meio do sinal de adição"></a>
+        <a href="../../index.html"><img id="logo" src="../../Assets/Imagens/logoBranca.svg"
+                alt="Mãos representando o cuidado com a saúde, por meio do sinal de adição"></a>
         <nav id="nav">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
                 aria-expanded="false">Menu
@@ -27,69 +28,151 @@
     </header>
 
     <main>
-        
         <div class="main-pagamento">
-            
+
             <div class="main-titulo">
-                <h1>Pagamento</h1>
-                <hr>
+                <h1>Forma de Pagamento:</h1>
             </div>
-
-            <div class="main-valor">
-                <h2>Valor da consulta R$80,00</h2>
-            </div>
-            
+            <hr>
             <div class="main-formaPagamento">
-                <h3> Forma de pagamento</h3>
 
-                <div class="main-formaPagamento-botões">
-                    <button id="botão1" onclick="cartão()">Cartão</button>
-                    <button id="botão2" onclick="debito()">Boleto</button>
-                    <button id="botão3" onclick="pix()">Pix</button>
-                </div>
-
-                <div id="cartão" class="main-formaPagamento-cartão">
-                    
-                    <div class="formaPagamento-cartão-inputs">
-                        <legend for="tipoCartão">Nome do Titular</legend>
-                        <select id="tipoCartão">
-                            <option value="">Crédito</option>
-                            <option value="">Débito</option>
-                        </select>
-                    </div>
-                    
-                    <div class="formaPagamento-cartão-inputs">
-                        <legend for="nomeTitular">Nome do Titular</legend>
-                        <input id="nomeTitular" type="text">
-                    </div>
-
-                    <div class="formaPagamento-cartão-inputs">
-                        <legend for="numCartão">Numero do Cartão</legend>
-                        <input id="numCartão" type="number">
-                    </div>
-
-                    <div class="formaPagamento-cartão-inputs">
-                        <legend for="dataValidade">Data de Validade</legend>
-                        <input id="dataValidade" type="number">
-                    </div>
-
-                    <div class="formaPagamento-cartão-inputs">
-                        <legend for="cvv">Código de Segurança (CVV)</legend>
-                        <input id="cvv" type="number">
+                <div class="main-titulo-forma-pagamento">
+                    <div class="main-formaPagamento-botões">
+                        <button id="botão1" onclick="cartão()">Cartão</button>
+                        <button id="botão2" onclick="debito()">Boleto</button>
+                        <button id="botão3" onclick="pix()">Pix</button>
                     </div>
                 </div>
 
-                <div id="boleto" class="main-formaPagamento-debito esconder">
-                    <p>teste</p>
+                <div id="cartão">
+
+                    <div class="main-formaPagamento-cartão">
+
+                        <div class="inputs">
+                            <div class="valor-cartão">
+                                <p>Valor: R$ 80,00</p>
+                            </div>
+
+                            <div class="formaPagamento-cartão-inputs">
+                                <legend for="tipoCartão">Nome do Titular</legend>
+                                <select id="tipoCartão">
+                                    <option value="">Crédito</option>
+                                    <option value="">Débito</option>
+                                </select>
+                            </div>
+                            <div class="formaPagamento-cartão-inputs">
+                                <legend for="nomeTitular">Nome do Titular</legend>
+                                <input id="nomeTitular" type="text">
+                            </div>
+
+                            <div class="formaPagamento-cartão-inputs">
+                                <legend for="numCartão">Numero do Cartão</legend>
+                                <input id="numCartão" type="number">
+                            </div>
+
+                            <div class="formaPagamento-cartão-inputs">
+                                <legend for="dataValidade">Data de Validade</legend>
+                                <input id="dataValidade" type="number">
+                            </div>
+
+                            <div class="formaPagamento-cartão-inputs">
+                                <legend for="cvv">Código de Segurança (CVV)</legend>
+                                <input id="cvv" type="number">
+                            </div>
+                        </div>
+
+
+                        <div class="img-cartão">
+                            <img src="../../Assets/Imagens/card.png" alt="Cartão">
+                        </div>
+
+                    </div>
                 </div>
 
-                <div id="pix" class="main-formaPagamento-pix esconder" >
-                    <p>teste2</p>
+                <div id="boleto" class="main-formaPagamento-boleto esconder">
+                    <div class="main-boleto">
+
+                        <div class="main-boleto-menu">
+
+                            <div>
+                                <p class="valor">Valor a pagar:</p>
+                                <p class="numbers">R$ 80,00</p>
+                            </div>
+
+                            <div>
+                                <p class="vencimento">Vencimento:</p>
+                                <p class="numbers">09/06/2023</p>
+                            </div>
+
+                        </div>
+
+                        <div class="main-boleto-menu-infos">
+
+                            <div class="boleto-img">
+                                <p>Use este código de barras e pague o boleto pelo celular:</p>
+                                <img src="../../Assets/Imagens/codigo de barra.png">
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="boleto-instruções">
+                            <label>Informações Importantes:</label>
+                            <p>•Depois do pagamento é só aguardar! Você será informado após o banco receber o valor.<br>
+                                Esse processo pode levar até 48h.<br><br>
+                                •Caso o boleto não seja pago, seu pedido será cancelado automaticamente! Não pague
+                                após a data de vencimento!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pix" class="main-formaPagamento-pix esconder">
+
+                    <div class="quadrado-pix">
+
+                        <div class="pix-textos-img">
+
+                            <img src="../../Assets/Imagens/01-33.png">
+
+                            <div class="pix-titulo">
+                                <label>Pedido Gerado!</label>
+                                <p>Agora você só precisa finalizar o pagamento!</p>
+                            </div>
+
+                        </div>
+
+                        <div class="valor-consulta">
+                            <p>Valor: R$ 80,00</p>
+                            <hr>
+                        </div>
+
+                        <div class="pix-mesagem-aguardo">
+                            <p>Olá, sua compra está reservada esperando o pagamento!</p>
+                        </div>
+
+                        <div class="pix-img-qrcode">
+                            <img src="../../Assets/Imagens/chart.png">
+                        </div>
+
+                        <div class="pix-textos-instruções">
+                            <p>-Abra o aplicativo no banco do seu celular <br>-Selecione a opção pagar com PIX/escanear
+                                com QR Code <br>
+                                -Após pagamento você receberá por e-mail os dados de acesso do pagamento</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
             <div class="area-finalização">
-                <a href="" onclick="agendar()">Agendar</a>
+                <a onclick="agendar()">Agendar</a>
+                <div id="popup" class="popup-container esconder">
+                    <div class="popup-content">
+                        <span class="popup-close" onclick="closePopup()">&times;</span>
+                        <h2 class="popup-title">Pagamento efetuado com sucesso</h2>
+                        <p class="popup-text">Sua consulta foi agendada. veja mais detalhes sobre ela clicando o botão abaixo.</p>
+                        <a class="popup-button" href="../Pag_Consultas do Usuario/consultasUsuario.html">Continuar</a>
+                    </div>
+                </div>
             </div>
         </div>
 

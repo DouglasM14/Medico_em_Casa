@@ -43,5 +43,5 @@ function pix() {
   document.getElementById("botão3").classList.add('ativo')
 }
 function agendar() {
-  console.log("formulario enviado")
+  document.getElementById('popup').classList.remove('esconder')
 }
