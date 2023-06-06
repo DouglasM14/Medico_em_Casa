@@ -38,7 +38,77 @@ function removeError(index) {
 
 
 
+function finalizar() {
+    let numValidar = 0;
 
+    if (campos[0].value === '') {
+        setError(0)
+    } else {
+        removeError(0)
+        numValidar++
+    }
+    if (campos[1].value === '') {
+        setError(1)
+    } else {
+        removeError(1)
+        numValidar++
+    }
+    if (campos[2].value.length < 11) {
+        setError(2)
+    } else {
+        removeError(2)
+        numValidar++
+    }
+    if (campos[3].value.length < 9) {
+        setError(3)
+    } else {
+        removeError(3)
+        numValidar++
+    }
+
+
+
+    if (campos[4].value === '') {
+        setError(4)
+    } else {
+        removeError(4)
+        numValidar++
+    }
+    if (campos[5].value === '') {
+        setError(5)
+    } else {
+        removeError(5)
+        numValidar++
+    }
+    if (campos[6].value === '') {
+        setError(6)
+    } else {
+        removeError(6)
+        numValidar++
+    }
+
+    if (emailRegex.test(campos[7].value)) {
+        removeError(7)
+        numValidar++
+    } else {
+        setError(7)
+    }
+    if (campos[8].value.length < 11) {
+        setError(8)
+    } else {
+        removeError(8)
+        numValidar++
+    }
+    if (campos[9].value.length < 8) {
+        setError(9)
+    } else {
+        removeError(9)
+        numValidar++
+    }
+    if(numValidar = 11){
+        document.getElementById('popup').classList.remove('esconder')
+    }
+}
 
 
 
@@ -76,46 +146,6 @@ function rgValidate() {
     }
 }
 
-function continuar1() {
-    let numValidar = 0;
-
-    if (campos[0].value === '') {
-        setError(0)
-    } else {
-        removeError(0)
-        numValidar++
-    }
-    if (campos[1].value === '') {
-        setError(1)
-    } else {
-        removeError(1)
-        numValidar++
-    }
-    if (campos[2].value.length < 11) {
-        setError(2)
-    } else {
-        removeError(2)
-        numValidar++
-    }
-    if (campos[3].value.length < 9) {
-        setError(3)
-    } else {
-        removeError(3)
-        numValidar++
-    }
-    if (numValidar == 4) {
-        document.getElementById("bloco1").classList.add('esconder')
-        document.getElementById("bloco2").classList.remove('esconder')
-    }
-}
-
-
-
-
-
-
-
-
 
 //                           BLOCO 2
 function ruaValidate() {
@@ -141,45 +171,6 @@ function cepValidate() {
         removeError(6)
     }
 }
-
-
-function continuar2() {
-    let numValidar = 0;
-
-    if (campos[4].value === '') {
-        setError(4)
-    } else {
-        removeError(4)
-        numValidar++
-    }
-    if (campos[5].value === '') {
-        setError(5)
-    } else {
-        removeError(5)
-        numValidar++
-    }
-    if (campos[6].value === '') {
-        setError(6)
-    } else {
-        removeError(6)
-        numValidar++
-    }
-
-    if (numValidar == 3) {
-        document.getElementById("bloco2").classList.add('esconder')
-        document.getElementById("bloco3").classList.remove('esconder')
-    }
-}
-function voltar2() {
-    document.getElementById("bloco2").classList.add('esconder')
-    document.getElementById("bloco1").classList.remove('esconder')
-}
-
-
-
-
-
-
 
 
 
@@ -214,50 +205,4 @@ function compararSenha() {
     } else {
         setError(10)
     }
-}
-
-function continuar3() {
-    let numValidar = 0;
-
-    if (emailRegex.test(campos[7].value)) {
-        removeError(7)
-        numValidar++
-    } else {
-        setError(7)
-    }
-    if (campos[8].value.length < 11) {
-        setError(8)
-    } else {
-        removeError(8)
-        numValidar++
-    }
-    if (campos[9].value.length < 8) {
-        setError(9)
-    } else {
-        removeError(9)
-        numValidar++
-    }
-    if (campos[9].value == campos[10].value && campos[10].value.length >= 8) {
-        removeError(10)
-        numValidar++
-    } else {
-        setError(10)
-    }
-    if (numValidar == 4) {
-        document.getElementById("bloco3").classList.add('esconder')
-        document.getElementById("bloco4").classList.remove('esconder')
-    }
-}
-function voltar3() {
-    document.getElementById("bloco3").classList.add('esconder')
-    document.getElementById("bloco2").classList.remove('esconder')
-}
-
-function voltar4() {
-    document.getElementById("bloco4").classList.add('esconder')
-    document.getElementById("bloco3").classList.remove('esconder')
-}
-
-function finalizar() {
-    document.getElementById('popup').classList.remove('esconder')
 }

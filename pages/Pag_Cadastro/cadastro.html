@@ -22,8 +22,6 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
-
-
     <header id="header">
         <a href="../../index.html"><img id="logo" src="../../Assets/Imagens/logoBranca.svg"
                 alt="Mãos representando o cuidado com a saúde, por meio do sinal de adição"></a>
@@ -45,8 +43,9 @@
 
         <div class="main-conteudo">
 
+
             <div class="main-conteudo-imagem">
-                <img src="../../Assets/Imagens/Medico Desenho.jpg" alt="Animação de médico sorridente e apontando">
+                <img src="../../Assets/Imagens/medico.jpg" alt="Animação de médico sorridente e apontando">
             </div>
 
             <div class="main-conteudo-formulario">
@@ -71,13 +70,15 @@
 
                         <div class="formulario-bloco-item">
                             <label for="cpf" class="titulos">Número do CPF</label>
-                            <input class="required" id="cpf" type="text" maxlength="11" placeholder="000.000.000-00" oninput="cpfValidate()">
+                            <input class="required" id="cpf" type="text" maxlength="11" placeholder="000.000.000-00"
+                                oninput="cpfValidate()">
                             <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="rg" class="titulos">Número do RG</label>
-                            <input class="required" id="rg" type="text" maxlength="9" placeholder="00.000.000-0" oninput="rgValidate()">
+                            <input class="required" id="rg" type="text" maxlength="9" placeholder="00.000.000-0"
+                                oninput="rgValidate()">
                             <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
@@ -106,13 +107,15 @@
 
                         <div class="formulario-bloco-item">
                             <label for="numeroCasa" class="titulos">Número da residencia</label>
-                            <input class="required" id="numeroCasa" type="number" placeholder="" oninput="numRuaValidate()">
+                            <input class="required" id="numeroCasa" type="number" placeholder=""
+                                oninput="numRuaValidate()">
                             <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="cep" class="titulos">CEP</label>
-                            <input class="required" id="cep" type="number" placeholder="Digite o CEP" oninput="cepValidate()">
+                            <input class="required" id="cep" type="number" placeholder="Digite o CEP"
+                                oninput="cepValidate()">
                             <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
@@ -132,25 +135,29 @@
 
                         <div class="formulario-bloco-item">
                             <label for="email" class="titulos">E-mail</label>
-                            <input class="required" id="email" type="email" placeholder="exemplo@gmail.com" oninput="emailValidate()">
+                            <input class="required" id="email" type="email" placeholder="exemplo@gmail.com"
+                                oninput="emailValidate()">
                             <span class="span-required">Digite um email valido</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="telefone" class="titulos">Núemro de telefone</label>
-                            <input class="required" id="telefone" type="tel" placeholder="(00) 00000-0000" oninput="telValidate()">
+                            <input class="required" id="telefone" type="tel" placeholder="(00) 00000-0000"
+                                oninput="telValidate()">
                             <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="senha" class="titulos">Crie uma senha</label>
-                            <input class="required" id="senha" type="text" placeholder="Digite uma senha com no minimo 8 digitos" oninput="senhaValidate()">
+                            <input class="required" id="senha" type="text"
+                                placeholder="Digite uma senha com no minimo 8 digitos" oninput="senhaValidate()">
                             <span class="span-required">Esse campo é obrigatorio</span>
                         </div>
 
                         <div class="formulario-bloco-item">
                             <label for="senha2" class="titulos">Repita a senha</label>
-                            <input class="required" id="senha2" type="password" placeholder="Repita a senha" oninput="compararSenha()">
+                            <input class="required" id="senha2" type="password" placeholder="Repita a senha"
+                                oninput="compararSenha()">
                             <span class="span-required">As senhas devem ser compativeis</span>
                         </div>
 
@@ -164,7 +171,7 @@
                         <legend>Historico Médico</legend>
 
                         <div class="formulario-bloco-item">
-                            <label for="doenças"></label>
+                            <label for="doenças">Doenças Crônicas</label>
                             <input type="text" placeholder="">
                         </div>
 
@@ -192,7 +199,6 @@
                             <label for="historico" class="titulos">Histótico Familiar</label>
                             <input id=historico"" type="text" placeholder="">
                         </div>
-
 
                         <div class="formulario-bloco-button">
                             <a onclick="voltar4()">Voltar</a>
@@ -227,7 +233,6 @@
         </div>
     </footer>
 
-    </footer>
     <script src="cadastro.js"></script>
 </body>
 

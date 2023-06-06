@@ -11,6 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    overflow-x: hidden;
     background-color: rgb(28, 33, 47);
     font-family: 'Roboto', sans-serif;
 }
@@ -92,13 +94,6 @@ main {
     flex-direction: column;
 }
 
-.main-valor {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 15px;
-}
-
 .main-valor h2 {
     padding: 10px;
     background-color: springgreen;
@@ -110,7 +105,7 @@ main {
     padding: 10px;
 }
 
-.main-titulo-forma-pagamento{
+.main-titulo-forma-pagamento {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,6 +129,8 @@ main {
 
 .main-formaPagamento-botões button:hover {
     background-color: rgb(16, 58, 131);
+    border-bottom: 3px solid rgb(16, 58, 131);
+    color: white;
 }
 
 .ativo {
@@ -153,7 +150,7 @@ main {
     align-items: center;
 }
 
-.inputs{
+.inputs {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -196,14 +193,14 @@ main {
     padding: 10px;
 }
 
-.main-titulo{
+.main-titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.valor-cartão{
+.valor-cartão {
     font-size: 1.6em;
 }
 
@@ -248,17 +245,17 @@ footer p {
 
 .area-finalização {
     display: flex;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
 }
 
-.area-finalização a{
-     color: white;
-     width: 10%;
-     padding: 15px 12px;
-     background-color: rgb(38, 97, 196);
-     border-radius: 15px;
-     text-align: center;
+.area-finalização a {
+    color: white;
+    width: 200px;
+    padding: 15px 12px;
+    background-color: rgb(38, 97, 196);
+    border-radius: 15px;
+    text-align: center;
 }
 
 .area-finalização a:hover {
@@ -359,14 +356,14 @@ footer p {
     margin-top: 50px;
 }
 
-.valor-consulta{
+.valor-consulta {
     font-size: 1.8em;
     color: white;
 }
 
 /* BOLETO */
 
-.main-formaPagamento-boleto{
+.main-formaPagamento-boleto {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -382,18 +379,18 @@ footer p {
     padding: 20px;
 }
 
-.main-boleto-menu{
+.main-boleto-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
 
-.numbers{
+.numbers {
     font-size: 1.3em;
 }
 
-.vencimento{
+.vencimento {
     text-align: right;
 }
 
@@ -433,6 +430,7 @@ footer p {
     font-size: 1.1rem;
 }
 
+
 /*                       Pop-Up                    */
 .popup-container {
     width: 100%;
@@ -455,6 +453,10 @@ footer p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     max-width: 500px;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes popup-anim {
@@ -490,6 +492,7 @@ footer p {
 
 .popup-text {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .popup-button {
@@ -508,10 +511,63 @@ footer p {
 
 
 /*                       Media Query                    */
+@media (max-width: 1000px) {
+    .img-cartão,.pix-textos-img {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    .main-formaPagamento-cartão{
+        flex-direction: column;
+        
+        width: 100%;
+    }
+
+    .inputs{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .formaPagamento-cartão-inputs{
+        width: 100%;
+    }
+
+    .main-formaPagamento-cartão input{
+        width: 100%;
+    }
+    .main-formaPagamento-cartão select{
+        width: 100%;
+    }
+
+    .quadrado-pix{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .boleto-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pix-img-qrcode img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
 @media (max-width: 600px) {
     #header {
         border-radius: 0;
-    }.quadrado-pix{
+    }
+
+    .quadrado-pix {
         width: 100%;
     }
 

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editarCadastro.css">
+    <title>Médico em Casa</title>
+</head>
+
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <header id="header">
+        <a href="../../../index.html"><img id="logo" src="../../../Assets/Imagens/logoBranca.svg"
+                alt="Mãos representando o cuidado com a saúde, por meio do sinal de adição"></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../Pag_Cadastro/cadastro.html">Cadastro</a></li>
+                <li><a href="../../Pag_Perfil/Perfil.html">Perfil</a></li>
+                <li><a href="../../Pag_Painel do Usuario/painelUsuario.html">Painel do Usuário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="main-conteudo">
+            <div class="main-conteudo-formulario">
+
+                <form id="form" action="">
+
+                    <div class="formulario-superior">
+
+                        <section class="formulario-bloco" id="bloco3">
+                            <legend>Dados da sua conta</legend>
+
+                            <div class="formulario-bloco-item">
+                                <label for="email" class="titulos">E-mail</label>
+                                <input class="required" id="email" type="email" placeholder="exemplo@gmail.com" disabled
+                                    oninput="emailValidate()">
+                                <span class="span-required">Digite um email valido</span>
+                            </div>
+
+                            <div class="formulario-bloco-item">
+                                <label for="telefone" class="titulos">Núemro de telefone</label>
+                                <input class="required" id="telefone" type="tel" placeholder="(00) 00000-0000" disabled
+                                    oninput="telValidate()">
+                                <span class="span-required">Esse campo é obrigatorio</span>
+                            </div>
+
+                            <div class="formulario-bloco-item">
+                                <label for="senha" class="titulos">Crie uma senha</label>
+                                <input class="required" id="senha" type="text"
+                                    placeholder="Digite uma senha com no minimo 8 digitos" oninput="senhaValidate()" disabled>
+                                <span class="span-required">Esse campo é obrigatorio</span>
+                            </div>
+
+
+                        </section>
+    
+                        <section class="formulario-bloco" id="bloco2">
+    
+                            <legend>Endereço</legend>
+    
+                            <div class="formulario-bloco-item">
+                                <label for="rua" class="titulos">Nome da Rua</label>
+                                <input class="required" id="rua" type="text" placeholder="" oninput="ruaValidate()">
+                                <span class="span-required">Esse campo é obrigatorio</span>
+                            </div>
+    
+                            <div class="formulario-bloco-item">
+                                <label for="numeroCasa" class="titulos">Número da residencia</label>
+                                <input class="required" id="numeroCasa" type="number" placeholder=""
+                                    oninput="numRuaValidate()">
+                                <span class="span-required">Esse campo é obrigatorio</span>
+                            </div>
+    
+                            <div class="formulario-bloco-item">
+                                <label for="cep" class="titulos">CEP</label>
+                                <input class="required" id="cep" type="number" placeholder="Digite o CEP"
+                                    oninput="cepValidate()">
+                                <span class="span-required">Esse campo é obrigatorio</span>
+                            </div>
+    
+                            <div class="formulario-bloco-item">
+                                <label for="complemento" class="titulos">Complemento</label>
+                                <input id="complemento" type="text" placeholder="">
+                            </div>
+    
+                        </section>
+                    </div>
+
+                    <div class="formulario-inferior">
+                        <section class="formulario-bloco" id="bloco1">
+
+                            <legend>Informações pessoais</legend>
+    
+                            <div class="formulario-bloco-item">
+                                <label for="nome" class="titulos">Nome completo</label>
+                                <input class="required" id="nome" type="text" placeholder="" oninput="nameValidate()">
+                                <span class="span-required">Esse campo é obrigatorio</span>
+                            </div>
+    
+                            <div class="formulario-bloco-item">
+                                <label for="nascimento" class="titulos">Data de Nascimento</label>
+                                <input class="required" id="nascimento" type="date" oninput="dateValidate()">
+                                <span class="span-required">Esse campo é obrigatorio</span>
+                            </div>
+    
+                            <div class="formulario-bloco-item">
+                                <label for="cpf" class="titulos">Número do CPF</label>
+                                <input class="required" id="cpf" type="text" maxlength="11" placeholder="000.000.000-00"
+                                    oninput="cpfValidate()">
+                                <span class="span-required">Esse campo é obrigatorio</span>
+                            </div>
+    
+                            <div class="formulario-bloco-item">
+                                <label for="rg" class="titulos">Número do RG</label>
+                                <input class="required" id="rg" type="text" maxlength="9" placeholder="00.000.000-0"
+                                    oninput="rgValidate()">
+                                <span class="span-required">Esse campo é obrigatorio</span>
+                            </div>
+    
+                            <div class="formulario-bloco-item">
+                                <label for="genero" class="titulos">Gênero biologico</label>
+                                <select id="genero">
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+                                </select>
+                            </div>
+    
+                        </section>
+
+                        <section class="formulario-bloco" id="bloco4">
+                            <legend>Historico Médico</legend>
+
+                            <div class="formulario-bloco-item">
+                                <label for="doenças">Doenças Crônicas</label>
+                                <input type="text" placeholder="">
+                            </div>
+
+                            <div class="formulario-bloco-item">
+                                <label for="alergias" class="titulos">Alergias Conhecidas</label>
+                                <input id="alergias" type="text" placeholder="">
+                            </div>
+
+                            <div class="formulario-bloco-item">
+                                <label for="condiçõesGeneticas" class="titulos">Condições geneticas</label>
+                                <input id="condiçõesGeneticas" type="text" placeholder="">
+                            </div>
+
+                            <div class="formulario-bloco-item">
+                                <label for="condiçõesPsiquiátricas" class="titulos">Condições psiquiátricas</label>
+                                <input id="condiçõesPsiquiátricas" type="text" placeholder="">
+                            </div>
+
+                            <div class="formulario-bloco-item">
+                                <label for="cirurgias" class="titulos">Cirurgias anteriores</label>
+                                <input id="cirurgias" type="text" placeholder="">
+                            </div>
+
+                            <div class="formulario-bloco-item">
+                                <label for="historico" class="titulos">Histótico Familiar</label>
+                                <input id=historico"" type="text" placeholder="">
+                            </div>
+                        </section>
+                    </div>
+                    <div class="formulario-bloco-button">
+                        <a onclick="finalizar()">Finalizar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="popup" class="popup-container esconder">
+            <div class="popup-content">
+                <span class="popup-close" onclick="closePopup()">&times;</span>
+                <h2 class="popup-title">Cadastro feito com Sucesso</h2>
+                <p class="popup-text">O seu cadastro foi realizado, clique no botão abaixo para ir ao seu perfil.</p>
+                <a class="popup-button" href="../Pag_Painel do Usuario/painelUsuario.html">Continuar</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-itens">
+            <h5>Médico em Casa</h5>
+            <hr>
+            <a href="">Glossário de Termos Médicos</a>
+        </div>
+        <div class="footer-itens">
+            <h5>Entre em Contato</h5>
+            <hr>
+            <p>Telefone: +55 (11) 12345-1234</p>
+            <p>E-mail: medicoemcasa@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="editarCadastro.js"></script>
+</body>
+
+</html>

@@ -15,3 +15,11 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+function cancelarConsulta() {
+  document.getElementById('popup').classList.remove('esconder')
+}
+
+function closePopup(){
+  document.getElementById('popup').classList.add('esconder')
+}

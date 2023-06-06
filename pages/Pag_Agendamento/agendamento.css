@@ -73,6 +73,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    min-height: 75vh;
 }
 
 .main-consulta{

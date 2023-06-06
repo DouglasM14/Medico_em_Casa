@@ -117,13 +117,13 @@ main a {
     font-size: 1.1rem;
     width: 75%;
     padding: 15px 15px;
-    background-color: rgb(38, 97, 196);
+    background-color: rgb(38, 196, 104);
     border-radius: 15px;
 }
 
 .opção a:hover,
 main a:hover {
-    background-color: rgb(16, 58, 131);
+    background-color: rgb(16, 131, 87);
 }
 
 .voltar {

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    
+
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -23,7 +23,8 @@
     </script>
 
     <header id="header">
-        <a href="../../index.html"><img id="logo" src="../../Assets/Imagens/logoBranca.svg" alt="Mãos representando o cuidado com a saúde, por meio do sinal de adição"></a>
+        <a href="../../index.html"><img id="logo" src="../../Assets/Imagens/logoBranca.svg"
+                alt="Mãos representando o cuidado com a saúde, por meio do sinal de adição"></a>
         <nav id="nav">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
                 aria-expanded="false">Menu
@@ -49,44 +50,37 @@
                     <p>Data: <span id="data">00/00/0000</span></p>
                     <p>Horário: <span id="horario">00:00</span></p>
                 </div>
-                <div class="consulta-dados">
-                    <div class="dados-textos">
-                        <p>Nome: <span id="data">Nome de exemplo muito foda</span></p>
-                        <p>Endereço: <span id="horario">Um endereço muito foda e legal Num:666</span></p>
-                    </div>
-                    <button onclick="cancelarConsulta()">Cancelar Consulta</button>
-                </div>
-            </div>
 
-            <div class="consulta">
-                <div class="consulta-dataHora">
-                    <p>Data: <span id="data">00/00/0000</span></p>
-                    <p>Horário: <span id="horario">00:00</span></p>
-                </div>
-                <div class="consulta-dados">
+                <div class="consulta-conteudo">
                     <div class="dados-textos">
-                        <p>Nome: <span id="data">Nome de exemplo muito foda</span></p>
-                        <p>Endereço: <span id="horario">Um endereço muito foda e legal Num:666</span></p>
+                        <h3>Medico que ira te atender:</h3>
+                        <p>Nome: <span id="nomeMedico">Nome do medico</span></p>
+                        <p>CRM: <span id="crm">CRM/SP 123456</span></p>
+                        <p>Especialidade: <span id="especialidade">Clínico geral</span></p>
                     </div>
-                    <button onclick="cancelarConsulta()">Cancelar Consulta</button>
+                    <div class="dados-img">
+                        <img src="../../Assets/Imagens/medico perfil.png" alt="">
+                    </div>
                 </div>
-            </div>
 
-            <div class="consulta">
-                <div class="consulta-dataHora">
-                    <p>Data: <span id="data">00/00/0000</span></p>
-                    <p>Horário: <span id="horario">00:00</span></p>
-                </div>
-                <div class="consulta-dados">
-                    <div class="dados-textos">
-                        <p>Nome: <span id="data">Nome de exemplo muito foda</span></p>
-                        <p>Endereço: <span id="horario">Um endereço muito foda e legal Num:666</span></p>
-                    </div>
+                <div class="consulta-cancelar">
                     <button onclick="cancelarConsulta()">Cancelar Consulta</button>
                 </div>
             </div>
         </div>
-        <a href="../../index.html">Voltar</a>
+        <a class="link-voltar" href="../Pag_Painel do Usuario/painelUsuario.html">Voltar</a>
+
+        <div id="popup" class="popup-container esconder">
+            <div class="popup-content">
+                <span class="popup-close" onclick="closePopup()">&times;</span>
+                <h2 class="popup-title">Você tem certeza que deseja cancelar sua consulta?</h2>
+                <div>
+                    <a class="popup-button-sim" href="../Pag_Painel do Usuario/painelUsuario.html">Sim</a>
+                    <a class="popup-button" onclick="closePopup()"">Não</a>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
