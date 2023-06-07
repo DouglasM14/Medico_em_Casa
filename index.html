@@ -13,14 +13,15 @@
 <body>
     <header>
         <div id="header">
-            <a href="index.html"><img id="logo" src="Assets/Imagens/logoBranca.svg" alt="Mãos representando o cuidado com a saúde, por meio do sinal de adição"></a>
+            <a href="index.html"><img id="logo" src="Assets/Imagens/logoBranca.svg"
+                    alt="Mãos representando o cuidado com a saúde, por meio do sinal de adição"></a>
             <nav id="nav">
                 <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
                     aria-expanded="false">Menu
                     <span id="hamburger"></span>
                 </button>
                 <ul id="menu" role="menu">
-                    <li><a href="" >Acessibilidade</a></li>
+                    <li><a href="">Acessibilidade</a></li>
                     <li><a href="pages/Pag_Painel do Usuario/painelUsuario.html">Painel do Usuário</a></li>
                     <li><a href="pages/Pag_Medico_Painel/painelMedico.html">Painel do Medico</a></li>
                 </ul>
@@ -44,30 +45,44 @@
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
+
         <div class="main-itens">
+
             <div class="main-texto">
+
                 <h2>Sobre nós</h2>
-                <p>&nbsp;&nbsp;&nbsp;O site oferece consultas médicas online por R$80,00. 
+
+                <p>&nbsp;&nbsp;&nbsp;O site oferece consultas médicas online por R$80,00.
                     Após uma consulta básica, o paciente pode ser encaminhado para um médico especializado.
-                     O pagamento é feito antecipadamente, com possibilidade de reembolso total em caso de cancelamento com 24 horas de antecedência. 
-                     Privacidade e segurança são prioridades. </p>
+                    O pagamento é feito antecipadamente, com possibilidade de reembolso total em caso de cancelamento
+                    com 24 horas de antecedência.
+                    Privacidade e segurança são prioridades. </p>
+
                 <p>&nbsp;&nbsp;&nbsp;Estamos ansiosos para cuidar de você e de sua família. Marque sua consulta hoje
                     mesmo e embarque em
                     uma
                     jornada de cuidados médicos de qualidade.</p>
             </div>
+
             <div class="main-imagem">
                 <img src="Assets/Imagens/fundo2.jpg" alt="Uma foto de médicos uniformizados">
             </div>
+
         </div>
-        <div class="main-itens" id="cadastro">
+
+        <div class="main-itens2" id="cadastro">
+
             <div class="main-cadastro">
-                <h3>Primeira Consulta</h3>
-                <p>Clique no botão abaixo e preencha as informações pedidas para se cadastrar em nosso site. E poder
-                    marcar uma consulta com o seu médico sem precisar sair de casa.</p>
-                <a class="entrar" href="pages/Pag_Cadastro/cadastro.html">CADASTRAR</a>
+                <div>
+                    <h3>Primeira Consulta</h3>
+                    <p>Clique no botão abaixo e preencha as informações pedidas para se cadastrar em nosso site. E poder
+                        marcar uma consulta com o seu médico sem precisar sair de casa.</p>
+                </div>
+                <a class="entrar" href="pages/Pag_Cadastro/cadastro.html">Cadastrar</a>
             </div>
+
             <hr>
+
             <div class="main-login">
                 <div>
                     <h3>Tenho um Cadastro</h3>
@@ -84,7 +99,17 @@
                     <span class="span-required">Esse campo deve ser preenchido</span>
                     <div class="esqueciSenha"><a href="">Esqueci a senha</a></div>
                 </div>
-                <a class="entrar" onclick="verificarLogin()">ENTRAR</a>
+                <a class="entrar" onclick="verificarLogin()">Entrar</a>
+
+                <div id="popup" class="popup-container esconder">
+                    <div class="popup-content">
+                        <span class="popup-close" onclick="closePopup()">&times;</span>
+                        <h2 class="popup-title">Bem vindo de volta <span>Jesus</span>!</h2>
+                        <p class="popup-text">Sua conta foi confirmada, clique no botão abaixo para ir ao seu perfil.
+                        </p>
+                        <a class="popup-button" href="pages/Pag_Medico_Painel/painelMedico.html">Continuar</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

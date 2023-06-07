@@ -253,13 +253,13 @@ footer p {
     color: white;
     width: 200px;
     padding: 15px 12px;
-    background-color: rgb(38, 97, 196);
+    background-color: #2661c4;
     border-radius: 15px;
     text-align: center;
 }
 
 .area-finalização a:hover {
-    background-color: rgb(16, 58, 131);
+    background-color: #103a83;
 }
 
 

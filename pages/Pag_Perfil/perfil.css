@@ -200,6 +200,41 @@ main {
 .main-conteudo a:hover {
     background-color: rgb(16, 58, 131);
 }
+
+.dados-esquerdo{
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.historico{
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dados-esquerdo p {
+    font-size: 1em;
+    font-weight: 550;
+}
+
+.dados-esquerdo span {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.historico p {
+    font-size: 1em;
+    font-weight: 550;
+}
+
+.historico span {
+    font-size: 1em;
+    font-weight: 400;
+}
+
 footer {
     display: flex;
     flex-direction: row;

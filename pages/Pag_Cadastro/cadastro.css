@@ -17,7 +17,6 @@ body {
     
 }
 
-
 .esconder {
     border: 0;
     clip: rect(0 0 0 0);
@@ -35,6 +34,11 @@ body {
     margin: 3px 0 0 1px;
     color: red;
     display: none;
+}
+
+#form{
+    display: flex;
+    flex-direction: row;
 }
 
 
