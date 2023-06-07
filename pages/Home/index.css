@@ -212,6 +212,7 @@ main {
 .main-cadastro,
 .main-login p {
     font-size: 1.4em;
+    text-align: center;
 }
 
 .main-login-inputs {
@@ -246,10 +247,13 @@ main {
     padding-top: 5px;
     font-size: 1em;
     color: black;
+    text-decoration: underline;
+    display: inline-block;
+    vertical-align: text-bottom;
 }
 
 .esqueciSenha a:hover {
-    color: blue;
+    color: rgb(108, 108, 108);
 }
 
 .entrar {
@@ -385,21 +389,44 @@ footer p {
         flex-direction: column;
     }
 
+    .main-texto{
+        width: 100%;
+    }
+
+    .main-imagem{
+        margin-top: 20px;
+        width: 100%;
+    }
     
 }
 
 @media (max-width: 600px) {
+    .main-itens2 {
+        gap: 30px;
+    }
+
+    .main-login-inputs{
+        width: 100%;
+    }
+    
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+
     #header {
         border-radius: 0;
-        background: rgba(53, 58, 70, 0.5);
+        width: 100%;
+    }
+
+    #header img{
+        visibility: hidden;
     }
 
     #menu {
         display: block;
         position: absolute;
-        width: 95%;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
+        width: 100%;
         top: 70px;
         right: 0px;
         background: rgba(53, 58, 70, 0.5);
@@ -418,19 +445,19 @@ footer p {
     }
 
     #menu a {
-        padding: 1em 0;
-        margin: 0 1em;
+        padding: 1rem 0;
+        margin: 0 1rem;
         border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     }
 
     #btn-mobile {
         display: flex;
-        padding: 0.5em 1em;
-        font-size: 1em;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
         border: none;
         background: none;
         cursor: pointer;
-        gap: 0.5em;
+        gap: 0.5rem;
         color: white;
     }
 

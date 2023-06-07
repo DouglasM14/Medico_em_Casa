@@ -15,3 +15,10 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+function chamarSuporte() {
+  document.getElementById('popup').classList.remove('esconder')
+}
+function fechar() {
+  document.getElementById('popup').classList.add('esconder')
+}

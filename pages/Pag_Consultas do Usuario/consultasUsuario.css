@@ -319,16 +319,24 @@ footer p {
 }
 
 @media (max-width: 600px) {
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+
     #header {
         border-radius: 0;
+        width: 100%;
+    }
+
+    #header img{
+        visibility: hidden;
     }
 
     #menu {
         display: block;
         position: absolute;
-        width: 95%;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
+        width: 100%;
         top: 70px;
         right: 0px;
         background: #353a46;
